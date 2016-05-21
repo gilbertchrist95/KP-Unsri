@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bagi pengguna yang belum terdaftar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default username"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unsriilkom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default password"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda akan langsung diarahkan ke halaman Setting akun baru"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>

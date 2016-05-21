@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="SUMMARY ALARM"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="BSC/RNC NAME:"
+            android:layout_weight=".5"/>
+        <TextView
+            android:id="@+id/textView_bsc_rnc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="RNC_Wonosari"
+            android:layout_weight=".5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="BTS NAME:"
+            android:layout_weight=".5"
+            />
+        <TextView
+            android:id="@+id/textView_bts_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:paddingRight="10dp"
+            android:text="PBM066MW1_PRO_TenggamusPrabumulih"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="13dp"
+            android:text="Site ID:"
+            android:layout_weight=".5"
+            />
+        <TextView
+            android:id="@+id/textView_site_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="PBM066"
+            android:layout_weight=".5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="13dp"
+            android:text="Cell ID:"
+            android:layout_weight=".5"/>
+        <TextView
+            android:id="@+id/textView_cell_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text=""
+            android:layout_weight=".5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm Name:"
+            android:layout_weight=".5"/>
+        <TextView
+            android:id="@+id/textView_alarm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="NodeB Unavailable"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm Type:"
+            android:layout_weight=".5" />
+        <TextView
+            android:id="@+id/textView_alarm_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Running"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="13dp"
+            android:text="Severity:"
+            android:layout_weight=".5"/>
+        <TextView
+            android:id="@+id/textView_severity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Major"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm Time:"
+            android:layout_weight=".5"/>
+        <TextView
+            android:id="@+id/textView_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="2015-12-23 16:09:47"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm ID:"
+            android:layout_weight=".5" />
+        <TextView
+            android:id="@+id/textView_alarm_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="22214"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm Triggered By:"
+            android:layout_weight=".5" />
+        <TextView
+            android:id="@+id/textView_alarm_triggered_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="BTS"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Alarm Status:"
+            android:layout_weight=".5" />
+        <TextView
+            android:id="@+id/textView_alarm_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:text="Open"
+            android:layout_weight=".5" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kpunsri.telkomsel.activities.ActivityResponseGrapari">
+
+    <TextView
+        android:id="@+id/text_view_grap_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_view_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="@string/capacity" />
+
+    <TextView android:id="@+id/text_view_result_grap_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_capacity"
+        android:text="@string/resultcapacity" />
+
+    <TextView
+        android:id="@+id/text_view_last_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_capacity"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="@string/last_time" />
+
+    <TextView
+        android:id="@+id/text_view_result_grap_lasttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_capacity"
+        android:layout_toRightOf="@+id/text_view_last_time"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_bandwidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_last_time"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="Bandwidth" />
+
+    <TextView
+        android:id="@+id/text_view_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_bandwidth"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="\tMinimum" />
+
+    <TextView android:id="@+id/text_view_min_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_min"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="In: " />
+
+    <TextView android:id="@+id/text_view_result_grap_min_in"
+        android:layout_below="@+id/text_view_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_min_in"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_min_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_min_in"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="Out: " />
+
+    <TextView android:id="@+id/text_view_result_grap_min_out"
+        android:layout_below="@+id/text_view_min_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_min_out"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_min_out"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="\tMaximum" />
+
+    <TextView android:id="@+id/text_view_max_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_max"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="In: " />
+
+    <TextView android:id="@+id/text_view_result_grap_max_in"
+        android:layout_below="@+id/text_view_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_max_in"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_max_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_max_in"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="Out: " />
+
+    <TextView android:id="@+id/text_view_result_grap_max_out"
+        android:layout_below="@+id/text_view_max_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_max_out"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_max_out"
+        android:paddingBottom="@dimen/fab_margin"
+        android:text="Average" />
+
+    <TextView android:id="@+id/text_view_average_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_average"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="In: " />
+
+    <TextView android:id="@+id/text_view_result_grap_average_in"
+        android:layout_below="@+id/text_view_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_average_in"
+        android:text="@string/sekian" />
+
+    <TextView android:id="@+id/text_view_average_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_average_in"
+        android:paddingBottom="@dimen/fab_margin"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:text="Out: " />
+
+    <TextView android:id="@+id/text_view_result_grap_average_out"
+        android:layout_below="@+id/text_view_average_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_view_average_out"
+        android:text="@string/sekian" />
+
+</RelativeLayout>

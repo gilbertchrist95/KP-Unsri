@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Telkomsel</string>
+    <string name="title_activity_main">Telkomsel</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action">Petunjuk</string>
+    <string name="tekssetalarm">Set Interval Alarm</string>
+    <string-array name="string_for_tab_2">
+        <item>Facebook</item>
+        <item>Tumblr</item>
+        <item>Twitter</item>
+        <item>Pinterest</item>
+        <item>Google</item>
+    </string-array>
+    <string-array name="tekssetalarm">
+        <item>1 menit</item>
+        <item>3 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>20 menit</item>
+    </string-array>
+
+    <string name="title_activity_activity_settings">ActivitySettings</string>
+    <string name="title_activity_activity_setting">ActivitySetting</string>
+    <string name="pilih">Pilih</string>
+
+    <string name="error_timeout">Oops! Your Connection Timed Out</string>
+    <string name="error_auth_failure">Oops! Telegram Says It Doesn\'t Recognize You</string>
+    <string name="error_network">Oops! Telegram Server Just Messed Up</string>
+    <string name="error_parser">Oops! Data Received Was An Unreadable Mess</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_register">Sign up Here</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_register_in_short">Sign up</string>
+    <string name="prompt_unit">Unit</string>
+    <string name="title_activity_register">Register</string>
+    <string name="grapari">Jaringan Grapari Telkomsel</string>
+    <string name="mitra">Jaringan Mitra Telkomsel</string>
+    <string name="capacity">Capacity: </string>
+    <string name="sekian"></string>
+    <string name="resultcapacity">2 Mbps</string>
+    <string name="last_time">Last Time:</string>
+
+    <string name="grapari_prompt_near">Choose a Near End</string>
+    <string name="grapari_prompt_far">Choose a Far End</string>
+    <string name="grapari_prompt_type_of_con">Choose a Type of Connection</string>
+
+    <string-array name="grapari_near">
+        <item>Palembang</item>
+        <item>Jambi</item>
+        <item>Lampung</item>
+    </string-array>
+
+    <string-array name="grapari_far_lampung">
+        <item>Lampung</item>
+    </string-array>
+
+    <string-array name="type_of_connection">
+        <item>MetroLite</item>
+        <item>2E1</item>
+    </string-array>
+
+    <string-array name="grapari_far_jambi">
+        <item>Bungo</item>
+        <item>Jambi</item>
+    </string-array>
+
+    <string-array name="grapari_far_palembang">
+        <item>"Belitung"</item>;
+        <item>"Bengkulu"</item>;
+        <item>"Lubuk Linggau"</item>;
+        <item>"Pangkal Pinang"</item>;
+        <item>"Palembang"</item>;
+        <item>"Regional"</item>;
+    </string-array>
+</resources>

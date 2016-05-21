@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.FormGrapari">
+
+    <TextView
+        android:id="@+id/text_view_near_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEAR END"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_near_end"
+        android:layout_below="@id/text_view_near_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/grapari_near"
+        android:prompt="@string/grapari_prompt_near"
+        android:padding="@dimen/fab_margin"
+        ></Spinner>
+
+    <TextView
+        android:id="@+id/text_view_far_end"
+        android:layout_below="@id/spinner_near_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAR END"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_far_end"
+        android:layout_below="@id/text_view_far_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin"/>
+
+    <TextView
+        android:id="@+id/text_view_type_of_con"
+        android:layout_below="@id/spinner_far_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TYPE OF CONNECTION"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_type_of_con"
+        android:layout_below="@id/text_view_type_of_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_of_connection"
+        android:padding="@dimen/fab_margin"/>
+
+    <Button        android:id="@+id/button_grapari_result"
+        android:layout_below="@id/spinner_type_of_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        />
+
+</RelativeLayout>

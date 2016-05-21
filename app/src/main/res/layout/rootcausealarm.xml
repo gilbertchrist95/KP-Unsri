@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootcause"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="ROOT CAUSE ALARM"
+        android:layout_weight=".5" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/power"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rootcause"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="POWER"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight=".5"/>
+
+    <TextView
+        android:id="@+id/plnoff"
+        android:layout_below="@+id/power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="PLN OFF"
+        android:layout_weight=".5" />
+
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plnoff"
+        android:id="@+id/batterystolen"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:text="Battery Stolen"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+
+        />
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/batterystolen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/batterybroken"
+        android:paddingRight="10dp"
+        android:text="Battery Broken"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gensetfail"
+        android:layout_below="@+id/batterybroken"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="GENSET FAIL"
+        android:layout_weight=".5" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gensetfail"
+        android:id="@+id/gensetbroken"
+        android:paddingRight="10dp"
+        android:text="Battery Broken"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"  />
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gensetbroken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/atsbroken"
+        android:paddingRight="10dp"
+        android:text="ATS Broken"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/atsbroken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/solarempty"
+        android:paddingRight="10dp"
+        android:text="Solar Empty"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/solarempty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sewadaya"
+        android:paddingRight="10dp"
+        android:text="Sewa Daya"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple" />
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sewadaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gensetonly"
+        android:paddingRight="10dp"
+        android:text="Genset Only"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple" />
+    <TextView
+        android:id="@+id/rectifierfail"
+        android:layout_below="@+id/gensetonly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="RECTIFIER FAIL"
+        android:layout_weight=".5" />
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rectifierfail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvd"
+        android:paddingRight="10dp"
+        android:text="LVD"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lvd"
+        android:id="@+id/backplane"
+        android:paddingRight="10dp"
+        android:layout_weight=".5"
+        android:text="Backplane"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/backplane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectifiermodul"
+        android:paddingRight="10dp"
+        android:text="Rectifier Modul"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rectifiermodul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/controlmodul"
+        android:paddingRight="10dp"
+        android:text="Control Modul"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+    <TextView
+        android:id="@+id/textotther"
+        android:layout_below="@+id/controlmodul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:textSize="13dp"
+        android:text="OTHER"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight=".5"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textotther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity"
+        android:paddingRight="10dp"
+        android:text="ACTIVITY"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/community"
+        android:paddingRight="10dp"
+        android:layout_weight=".5"
+        android:text="COMMUNITY PROBLEM"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/community"
+        android:id="@+id/overtemp"
+        android:paddingRight="10dp"
+        android:text="OVERTEMP"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <TextView
+        android:id="@+id/hardware"
+        android:layout_below="@+id/overtemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:textSize="13dp"
+        android:text="HARDWARE"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight=".5"/>
+
+
+    <CheckBox
+        android:layout_below="@id/hardware"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feeder"
+        android:paddingRight="10dp"
+        android:text="FEEDER STOLEN"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_below="@id/feeder"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/modulproblem"
+        android:paddingRight="10dp"
+        android:text="MODUL PROBLEM"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/modulproblem"
+        android:layout_alignParentRight="true"
+        android:id="@+id/waitingmodul"
+        android:paddingRight="10dp"
+        android:text="WAITING MODUL"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_below="@+id/waitingmodul"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vswr"
+        android:paddingRight="10dp"
+        android:text="VSWR HIGH"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <TextView
+        android:id="@+id/transmisi"
+        android:layout_below="@+id/vswr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="8dp"
+        android:textSize="13dp"
+        android:text="TRANSMISI"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight=".5"/>
+
+    <TextView
+        android:id="@+id/tranmisiflicker"
+        android:layout_below="@+id/transmisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="TRANSMISI FLICKER"
+        android:layout_weight=".5" />
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tranmisiflicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/interference"
+        android:paddingRight="10dp"
+        android:text="Interference"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/interference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fading"
+        android:paddingRight="10dp"
+        android:text="Fading"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <TextView
+        android:id="@+id/optic"
+        android:layout_below="@+id/fading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:text="OPTIC"
+        android:layout_weight=".5" />
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/optic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jasuka"
+        android:paddingRight="10dp"
+        android:text="Jasuka"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/jasuka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/metroe"
+        android:paddingRight="10dp"
+        android:text="Metro E"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/metroe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fots"
+        android:paddingRight="10dp"
+        android:text="FOTS (OSN)"
+        android:paddingLeft="25dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idr"
+        android:paddingRight="10dp"
+        android:text="IDR"
+        android:paddingLeft="15dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/idr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tranmisisdh"
+        android:paddingRight="10dp"
+        android:text="TRANSMISI SDH"
+        android:paddingLeft="15dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tranmisisdh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transmisifailed"
+        android:paddingRight="10dp"
+        android:text="TRANSMISI FAILED"
+        android:paddingLeft="15dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/transmisifailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/balmon"
+        android:paddingRight="10dp"
+        android:text="No ISR (Balmon)"
+        android:paddingLeft="15dp"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+</RelativeLayout>
