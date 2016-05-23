@@ -74,6 +74,7 @@ public class ServerRequestGrapari {
                 HttpResponse httpResponse = client.execute(post);
                 HttpEntity httpEntity = httpResponse.getEntity();
                 String result = EntityUtils.toString(httpEntity);
+                Log.d("result Grapari",""+result);
                 JSONObject jsonObject = new JSONObject(result);
 
                 if(jsonObject.length() == 0){
@@ -86,8 +87,8 @@ public class ServerRequestGrapari {
                     String value_max = jsonObject.getString("value_max");
 
                     Log.d("clock",clock);
-                    Log.d("valueMin", value_min);
-                    Log.d("valueAvg", value_avg);
+                    Log.d("value_min", value_min);
+                    Log.d("value_avg", value_avg);
                     Log.d("value_max",value_max);
 
                     monitor = new Monitor(grapari.itemid,clock,num,value_min,value_avg,value_max);

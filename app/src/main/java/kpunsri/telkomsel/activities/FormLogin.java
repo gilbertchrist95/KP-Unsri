@@ -63,7 +63,7 @@ public class FormLogin extends AppCompatActivity implements View.OnClickListener
         startActivity(new Intent(this, FormRegister.class));
     }
 
-    private void authenticate(final User user) {
+    private void authenticate(User user) {
         ServerUser serverUser = new ServerUser(this);
         serverUser.fetchUserDataInBackground(user, new GetUserCallBack() {
             @Override

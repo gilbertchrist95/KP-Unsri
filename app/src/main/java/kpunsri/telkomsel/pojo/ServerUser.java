@@ -110,7 +110,7 @@ public class ServerUser {
             ArrayList<NameValuePair> dataToSend = new ArrayList<>();
             dataToSend.add(new BasicNameValuePair("email", user.email));
             dataToSend.add(new BasicNameValuePair("password", user.password));
-
+            Log.d("Data to Send"," "+user.email+" "+user.password);
             HttpParams httpRequestParams = new BasicHttpParams();
             HttpConnectionParams.setConnectionTimeout(httpRequestParams, CONNECTION_TIME);
             HttpConnectionParams.setSoTimeout(httpRequestParams, CONNECTION_TIME);
@@ -125,6 +125,7 @@ public class ServerUser {
 
                 HttpEntity httpEntity = httpResponse.getEntity();
                 String result = EntityUtils.toString(httpEntity);
+                Log.d("result",""+result);
                 JSONObject jsonObject = new JSONObject(result);
 
                 if (jsonObject.length() == 0) {
